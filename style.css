@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.background-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  filter: blur(6px) brightness(0.85);
+}
+
+.index-page .background-overlay {
+  background: url("assets/bg-index.png") center/cover no-repeat;
+}
+
+.detail-page .background-overlay {
+  background: url("assets/bg-detail.png") center/cover no-repeat;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #9b1c1c;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.period {
+  text-align: center;
+  font-style: italic;
+}
+
+.tree {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.branch {
+  background: rgba(255,255,255,0.92);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.branch.center {
+  background: #fff2cc;
+  border: 2px solid #c0392b;
+}
+
+.box {
+  background: #ffffff;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-left: 5px solid #e67e22;
+  border-radius: 8px;
+}
+
+.analysis {
+  border-left-color: #8e44ad;
+}
+
+.main-event {
+  background: #ffeaa7;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.toggle-btn {
+  width: 100%;
+  padding: 12px;
+  background: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.toggle-btn:hover {
+  background: #a93226;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  padding-left: 18px;
+}
